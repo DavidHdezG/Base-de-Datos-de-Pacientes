@@ -122,10 +122,6 @@ void offregistro::on_pushButton_clicked()
         if (!registrar.exec())
             throw "Error al registrar, Número de Seguro Social repetido";
 
-        QMessageBox exito;
-        exito.setText("Registrado con éxito");
-        exito.show();
-
         //Se limpian los campos de texto al registrar un paciente con exito
         ui->nss->clear();
         ui->nombre->clear();
