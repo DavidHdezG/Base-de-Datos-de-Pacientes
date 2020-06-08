@@ -55,23 +55,23 @@ void Registrar::on_pushButton_clicked()
         QString telefono = ui->telefono->text();
 
         //Valida los datos ingresados por el usuario
-        if (nss.length() == 0 || nss.length() != 11 || isValidInt(nss.toStdString()) == false)
+        if (nss.length() == 0 || nss.length() != 11)
             throw "La casilla de Número de Seguro Social no es válida";
-        if (nombre.length() == 0 || isValidString(nombre.toStdString())==false)
+        if (nombre.length() == 0)
             throw "El Nombre no es válido";
-        if (apellp.length() == 0 || isValidString(apellp.toStdString())==false)
+        if (apellp.length() == 0)
             throw "El Apellido Paterno no es válido";
-        if (apellm.length() == 0 || isValidString(apellm.toStdString())==false)
+        if (apellm.length() == 0)
             throw "El Apellido Materno no es válido";
-        if(sexo.length()!=0 && isValidString(sexo.toStdString())==false)
+        if(sexo.length()!=0)
             throw "El sexo no es válido";
-        if(alergias.length()!=0 && isValidString(alergias.toStdString())==false)
+        if(alergias.length()!=0)
             throw "Las Alergias no son válidas";
-        if(ocupacion.length()!=0 && isValidString(ocupacion.toStdString())==false)
+        if(ocupacion.length()!=0)
             throw "La Ocupación no válida";
-        if (telefono.length() != 0 && isValidInt(telefono.toStdString()) == false)
+        if (telefono.length() != 0)
             throw "El Teléfono es inválido";
-        if (edad.length() != 0 && isValidInt(edad.toStdString()) == false)
+        if (edad.length() != 0 == false)
             throw "La edad no es válida";
 
         //Crea e introduce los datos en un archivo de texto de respaldo
@@ -177,21 +177,3 @@ bool Registrar::isValidInt(string str)
     return valido;
 }
 
-/**
- * Funcion que devuelve una variable booleana y recibe
- * una variable de tipo String para validar si es
- * una cadena de texto válida
-*/
-bool Registrar::isValidString(string validar){
-    char texto[50];
-    strcpy(texto,validar.c_str());
-    int i=0,j;
-    j=strlen(texto);
-    while(i<j){
-        if(isalpha(texto[i])!=0)
-            i++;
-        else
-            return false;
-    }
-    return true;
-}
