@@ -71,8 +71,8 @@ void offregistro::on_pushButton_clicked()
         QString ocupacion = ui->ocupacion->text();
         QString telefono = ui->telefono->text();
 
-        //Se validan los datos introducidos
-        if (nss.length() == 0 || nss.length() != 11 || isValidInt(nss.toStdString()) == false)
+        //Valida los datos ingresados por el usuario
+        if (nss.length() == 0 || nss.length() != 11)
             throw "La casilla de Número de Seguro Social no es válida";
         if (nombre.length() == 0)
             throw "El Nombre no es válido";
@@ -80,15 +80,9 @@ void offregistro::on_pushButton_clicked()
             throw "El Apellido Paterno no es válido";
         if (apellm.length() == 0)
             throw "El Apellido Materno no es válido";
-        if(sexo.length()!=0)
-            throw "El sexo no es válido";
-        if(alergias.length()!=0)
-            throw "Las Alergias no son válidas";
-        if(ocupacion.length()!=0)
-            throw "La Ocupación no válida";
-        if (telefono.length() != 0)
+        if (telefono.length() != 0 && isValidInt(telefono.toStdString())==false)
             throw "El Teléfono es inválido";
-        if (edad.length() != 0)
+        if (edad.length() != 0 && isValidInt(edad.toStdString())==false)
             throw "La edad no es válida";
 
         //Se crea un archivo de texto de respaldo y se introducen los datos
