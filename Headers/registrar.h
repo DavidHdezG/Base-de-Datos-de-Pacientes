@@ -34,7 +34,6 @@ private slots:
     void on_pushButton_clicked();
     void on_pushButton_2_clicked();
     bool isValidInt(string str);
-    bool isValidString(string validar);
 
 private:
     //Apuntador a un objeto del tipo de la clase Registrar
