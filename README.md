@@ -54,4 +54,7 @@ Copiar el ejecutable y el archivo libmysql.dll de la carpeta de compilación a u
 Se crearán todos los archivos necesarios para el proyecto. Ahora se podrá ejecutar en cualquier computadora.
 
 # Enlace para descargar el instalador de este proyecto
-https://drive.google.com/file/d/1JFro-H0u05Kbg8iNJkuKCPq3l3e4adLq/view?usp=sharing 
+https://drive.google.com/file/d/1i0ulxK8cAQIdkv9LxVpmBcpzzG5BDeKu/view?usp=sharing 
+
+# Enlace para descargar el programa en versión portable 
+https://drive.google.com/file/d/1mWJIFvaHov90nzAuUx9anbyKMwwu55WA/view?usp=sharing
