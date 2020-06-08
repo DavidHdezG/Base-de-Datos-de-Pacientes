@@ -42,4 +42,13 @@ Ahora entrar a la carpeta C:\Qt\5.15.0\Src\qtbase\src\plugins\sqldrivers y, si t
 Ahora podrás compilar el proyecto y ejecutarlo sin errores.
 
 ### No se encuentra la librería -libmysqld
-Cambiar el modo de compilación de "Debug" a "Release" en los kits disponibles
+Cambiar el modo de compilación de "Debug" a "Release" en los kits disponibles.
+
+## Crear ejecutable funcional
+Copiar el ejecutable y el archivo libmysql.dll de la carpeta de compilación a una nueva carpeta, luego abrir la consola de QtCreator y ejecutar:
+
+1.- cd "Ruta de la nueva carpeta"
+
+2.- windeployqt.exe .
+
+Se crearán todos los archivos necesarios para el proyecto. Ahora se podrá ejecutar en cualquier computadora
