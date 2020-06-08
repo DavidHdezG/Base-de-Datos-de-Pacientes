@@ -1,4 +1,4 @@
-# Registro-de-Pacientes
+# Base de Datos de Pacientes
 El programa se conecta a una base de datos remota donde guarda la información de los pacientes, además crea una de manera local en caso de que no se tenga acceso a internet.
 ## Software necesario para compilar
 1.- MySQL: https://dev.mysql.com/downloads/installer/ 
