@@ -95,12 +95,7 @@ void Registrar::on_pushButton_clicked()
         //Se ejecuta la variable registro
         if (!registro.exec())
             throw registro.lastError().text();
-
-        //Se crea un objeto que aparecera como una ventana emergente si el paciente se registra correctamente
-        QMessageBox msg3;
-        msg3.setText("Paciente registrado con exito");
-        msg3.show();
-
+      
         //Se limpian las casillas luego de registrar el paciente con exito
         ui->nss->clear();
         ui->nombre->clear();
