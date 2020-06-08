@@ -63,15 +63,9 @@ void Registrar::on_pushButton_clicked()
             throw "El Apellido Paterno no es válido";
         if (apellm.length() == 0)
             throw "El Apellido Materno no es válido";
-        if(sexo.length()!=0)
-            throw "El sexo no es válido";
-        if(alergias.length()!=0)
-            throw "Las Alergias no son válidas";
-        if(ocupacion.length()!=0)
-            throw "La Ocupación no válida";
-        if (telefono.length() != 0)
+        if (telefono.length() != 0 && isValidInt(telefono.toStdString())==false)
             throw "El Teléfono es inválido";
-        if (edad.length() != 0 == false)
+        if (edad.length() != 0 && isValidInt(edad.toStdString())==false)
             throw "La edad no es válida";
 
         //Crea e introduce los datos en un archivo de texto de respaldo
