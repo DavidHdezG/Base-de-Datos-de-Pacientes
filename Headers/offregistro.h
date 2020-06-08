@@ -37,8 +37,6 @@ private slots:
 
     bool isValidInt(string str);
 
-    bool isValidString(string validar);
-
 private:
     //Apuntador a un objeto del tipo de la clase MainMenu
     Ui::offregistro *ui;
