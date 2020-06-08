@@ -13,8 +13,8 @@ Cuando pregunte qué elementos instalar es muy importante seleccionar:
 ## ¿Cómo compilarlo?
 Al descargar el proyecto abrir el archivo base_de_datos.pro con Qt Creator y compilarlo (ícono del martillo), luego se tiene que copiar el archivo libmysql.dll en la carpeta donde se cconstruyó el ejecutable, de esta manera ya se podrá utilizar este programa.
 
-## Posibles problemas al ejecutarlo
-### Driver not loaded
+### Posibles problemas al ejecutarlo
+#### Driver not loaded
 Este error significa que no existe el driver que conecta el programa a MySQL. La forma de solucionarlo es:
 
 -Tener a la mano la ruta de instalación de MySQL Server sin espacios (se puede obtener con “dir /x” en la consola de Windows), por ejemplo: C:\PROGRA~1\MySQL\MYSQLS ~ 1.0\
@@ -41,7 +41,7 @@ Ahora entrar a la carpeta C:\Qt\5.15.0\Src\qtbase\src\plugins\sqldrivers y, si t
 
 Ahora podrás compilar el proyecto y ejecutarlo sin errores.
 
-### No se encuentra la librería -libmysqld
+#### No se encuentra la librería -libmysqld
 Cambiar el modo de compilación de "Debug" a "Release" en los kits disponibles.
 
 ## Crear ejecutable funcional
