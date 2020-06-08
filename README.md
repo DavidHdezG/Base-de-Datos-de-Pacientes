@@ -51,4 +51,4 @@ Copiar el ejecutable y el archivo libmysql.dll de la carpeta de compilación a u
 
 2.- windeployqt.exe .
 
-Se crearán todos los archivos necesarios para el proyecto. Ahora se podrá ejecutar en cualquier computadora
+Se crearán todos los archivos necesarios para el proyecto. Ahora se podrá ejecutar en cualquier computadora.
